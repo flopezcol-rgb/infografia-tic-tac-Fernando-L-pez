@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les TIC i les TAC a l’educació primària - Fernando López Colas</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--ink:#17213b;--mut:#5b6580;--p:#2f4bd8;--p2:#e6ebff;--a:#ff6b5b;--g:#12b5a0;--line:#dbe2f0;--r:18px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1426;--card:#18203a;--ink:#eef1fb;--mut:#a3adc9;--p:#8ea2ff;--p2:#252f55;--a:#ff8a7c;--g:#39d3bd;--line:#2b3558}}
+:root[data-theme="dark"]{--bg:#0f1426;--card:#18203a;--ink:#eef1fb;--mut:#a3adc9;--p:#8ea2ff;--p2:#252f55;--a:#ff8a7c;--g:#39d3bd;--line:#2b3558}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+header{background:#2E3A69;color:#fff;padding:48px 20px 56px;text-align:center}
+header small{letter-spacing:.14em;text-transform:uppercase;opacity:.85;font-weight:600}
+h1{margin:10px auto 0;max-width:820px;font-size:clamp(1.7rem,4.6vw,2.9rem);line-height:1.12}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav a,.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 16px;border-radius:99px;font:600 .9rem inherit;cursor:pointer;text-decoration:none;transition:.2s}
+nav a:hover,.btn:hover{border-color:var(--p);color:var(--p)}
+main{max-width:980px;margin:0 auto;padding:10px 18px 50px}
+section{margin-top:44px}
+h2{display:flex;align-items:center;gap:12px;font-size:1.5rem;margin:0 0 18px}
+h2 b{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--p);color:#fff;font-size:1rem}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.btn[aria-selected="true"]{background:var(--p);border-color:var(--p);color:#fff}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:0 6px 22px rgba(30,40,90,.06);animation:in .35s}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.panel h3{margin:0 0 8px;font-size:1.25rem}
+.lead{font-weight:600}.cite{color:var(--mut);font-size:.9rem;margin-top:10px}
+.split{display:grid;grid-template-columns:240px 1fr;gap:18px}
+.side{display:flex;flex-direction:column;gap:8px}.side .btn{text-align:left;border-radius:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.chip{display:inline-block;padding:9px 16px;border-radius:12px;background:var(--p2);color:var(--p);font-weight:700;text-decoration:none}
+a.chip:hover{background:var(--p);color:#fff}
+.plain{background:transparent;color:var(--ink);font-weight:500;padding-left:0}
+ul{padding-left:20px}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center}
+.arrow{font-size:1.8rem;color:var(--a)}
+.tag{display:inline-block;background:var(--a);color:#fff;border-radius:8px;padding:2px 10px;font-weight:700;font-size:.8rem;margin-bottom:8px}
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 20px}
+summary{cursor:pointer;font-weight:700}
+details li{margin:8px 0;font-size:.92rem;overflow-wrap:anywhere}
+footer{text-align:center;color:var(--mut);font-size:.88rem;padding:10px 18px 40px}
+#theme{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:9}
+@media(max-width:700px){.split{grid-template-columns:1fr}.side{flex-direction:row;flex-wrap:wrap}.vs{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}}
+</style>
+</head>
+<body>
+<header><small>Tecnologies digitals per a la inclusió educativa</small><h1>Les TIC i les TAC a l’educació primària: eines per a un aprenentatge significatiu</h1></header>
+<nav><a href="#que">1 · Què són</a><a href="#beneficis">2 · Beneficis</a><a href="#exemples">3 · Exemples</a><a href="#bib">Bibliografia</a></nav>
+<main>
+<section id="que"><h2><b>1</b>Què són les TIC i les TAC?</h2>
+<div class="vs">
+<div class="panel"><span class="tag">TIC</span><h3>Tecnologies de la Informació i la Comunicació</h3><p>Eines tecnològiques que faciliten l’accés i la transmissió de la informació: internet, vídeos, correu electrònic, televisió…</p></div>
+<div class="arrow" aria-hidden="true">➜</div>
+<div class="panel"><span class="tag" style="background:var(--g)">TAC</span><h3>Tecnologies de l’Aprenentatge i el Coneixement</h3><p>Aplicació pedagògica de les TIC per optimitzar l’ensenyament i l’aprenentatge: aplicacions interactives, gamificació, eines de col·laboració digital…</p></div>
+</div></section>
+
+<section id="beneficis"><h2><b>2</b>Beneficis a l’aula</h2>
+<div class="split"><div class="side" role="tablist" id="bt"></div><div class="panel" id="bp" role="tabpanel"></div></div></section>
+
+<section id="exemples"><h2><b>3</b>Exemples per àrees curriculars</h2>
+<div class="tabs" role="tablist" id="at"></div><div class="panel" id="ap" role="tabpanel"></div></section>
+
+<section id="bib"><h2><b>4</b>Bibliografia</h2>
+<details><summary>Mostra les fonts consultades</summary><ul>
+<li>Castejón, E., López, C. i Selga, M. (2016). <i>Inclusió digital a l’aula</i>. Barcelona: UOC.</li>
+<li>Xtec (2025). <i>Les TAC a l’escola! Aprendre i ensenyar amb tecnologies digitals</i>. <a href="https://agora.xtec.cat/esclariba/general/les-tecnologies-a-lescola/" target="_blank" rel="noopener">agora.xtec.cat</a></li>
+<li>YouTube (2019). <i>Diferencias entre TIC y TAC en educación</i>. <a href="https://www.youtube.com/watch?v=0t4l-0ZcpQk" target="_blank" rel="noopener">youtube.com</a></li>
+<li>Gencat (2025). <i>Lectura fàcil</i>. <a href="https://llengua.gencat.cat/ca/serveis/aprendre_catala/acatalunya/llegiu_i_parleu_programa/lectura-facil/index.html" target="_blank" rel="noopener">llengua.gencat.cat</a></li>
+<li>YouTube (2024). <i>¿Qué es Kahoot!</i> <a href="https://www.youtube.com/watch?v=XqJz7IyxUm0" target="_blank" rel="noopener">youtube.com</a></li>
+<li>Aprendizaje y creación – Merge Cube. <a href="https://mergeedu.com/cube?cr=2707" target="_blank" rel="noopener">mergeedu.com</a></li>
+</ul></details></section>
+</main>
+<footer>Repte 1. Quin paper hi juga la tecnologia en la inclusió educativa? · Activitat 2 – Explorant les TIC i les TAC a l’aula · Fernando López Colas</footer>
+<button class="btn" id="theme" aria-label="Canvia el tema">🌓</button>
+<script>
+const B=[
+["💡 Motivació i implicació","L’ús de tecnologies interactives incrementa la curiositat de l’alumnat.","Les TIC poden fomentar una actitud positiva cap a l’aprenentatge, permetent la personalització dels continguts i una interacció més àgil resultant en infants protagonistes de l’aprenentatge.","Castejón et al., 2016"],
+["🧩 Transversalitat","Les propostes diversificades que combinen àrees curriculars i eines potencien un aprenentatge més variat, complet i profund.","La tecnologia facilita seqüències didàctiques que combinen diverses àrees, fomentant un aprenentatge més significatiu. Els alumnes connecten conceptes de diferents matèries i els apliquen a situacions reals, tot basat en el DUA (Disseny Universal per a l’Aprenentatge).","Castejón et al., 2016"],
+["🤝 Inclusió educativa","Permeten adaptar materials per a alumnat amb diferents necessitats.","L’ús de tecnologies adaptades permet suprimir els obstacles per a alumnes amb dificultats d’aprenentatge o necessitats especials, tot garantint una educació més accessible i equitativa.","Castejón et al., 2016"],
+["🚀 Autonomia i creativitat","Afavoreixen l’aprenentatge personalitzat i la resolució de problemes.","L’ús de tecnologies en entorns educatius estimula l’autonomia, ja que els alumnes poden explorar, investigar i aprendre a partir dels seus propis interessos.","Xtec, 2025"],
+["💬 Treball cooperatiu","Fomenten la col·laboració mitjançant eines digitals compartides.","Els fòrums, els blogs i els documents compartits permeten un aprenentatge col·laboratiu més profitós i interactiu, reforçant la comunicació, la presa de decisions i el pensament crític, elements imprescindibles en l’educació actual.","Castejón et al., 2016"]];
+const A=[
+["📖 Llengua",[["Llibres digitals amb lectura fàcil (Castejón et al., 2016)"],["Storybird","https://storybird.com/"],["Book Creator","https://bookcreator.com/"]],"Apps com Storybird o Book Creator per crear històries digitals."],
+["➗ Matemàtiques",[["Kahoot","https://kahoot.com/"],["GeoGebra","https://www.geogebra.org/"],["Simuladors de problemes i càlcul mental"]],"Gamificació amb apps com Kahoot o GeoGebra i simuladors de resolució de problemes."],
+["🔬 Ciències",[["Microscopis digitals"],["Merge Cube","https://mergeedu.com/cube?cr=2707"]],"Recursos multimèdia per visualitzar processos científics, com el cicle de l’aigua amb Merge Cube."],
+["🎨 Educació artística",[["Sketchbook","https://www.sketchbook.com/"],["Canva","https://www.canva.com/"],["Edició de vídeo i animació"]],"Creació de dibuixos digitals amb Sketchbook o Canva i edició de vídeos i animacions per a l’expressió creativa."]];
+function tabs(box,items,cb,cls){box.innerHTML="";items.forEach((it,i)=>{const b=document.createElement("button");b.className="btn";b.role="tab";b.textContent=it[0];b.onclick=()=>{[...box.children].forEach((c,j)=>c.setAttribute("aria-selected",j==i));cb(i)};box.appendChild(b)});box.children[0].click()}
+const bp=document.getElementById("bp");
+tabs(document.getElementById("bt"),B,i=>{const x=B[i];bp.style.animation="none";bp.offsetWidth;bp.style.animation="";bp.innerHTML=`<h3>${x[0]}</h3><p class="lead">${x[1]}</p><p>${x[2]}</p><p class="cite">(${x[3]})</p>`});
+const ap=document.getElementById("ap");
+tabs(document.getElementById("at"),A,i=>{const x=A[i];ap.style.animation="none";ap.offsetWidth;ap.style.animation="";ap.innerHTML=`<h3>${x[0]}</h3><p>${x[2]}</p><div class="chips">${x[1].map(c=>c[1]?`<a class="chip" href="${c[1]}" target="_blank" rel="noopener">${c[0]} ↗</a>`:`<span class="chip plain" style="background:var(--p2);padding:9px 16px">${c[0]}</span>`).join("")}</div>`});
+const r=document.documentElement;document.getElementById("theme").onclick=()=>{const d=getComputedStyle(r).getPropertyValue("--bg").trim()=="#0f1426";r.dataset.theme=d?"light":"dark"};
+</script>
+</body>
+</html>
